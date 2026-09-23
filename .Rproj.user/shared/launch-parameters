@@ -1,0 +1,39 @@
+{
+    "name": "VS Playground",
+    "cluster": "Kubernetes",
+    "cluster_type": "Kubernetes",
+    "container_image": "650874229261.dkr.ecr.eu-central-1.amazonaws.com/titans/base:v1.0.15",
+    "default_image": "650874229261.dkr.ecr.eu-central-1.amazonaws.com/titans/base:v1.0.15",
+    "container_images": [
+        "650874229261.dkr.ecr.eu-central-1.amazonaws.com/titans/base:v1.0.15"
+    ],
+    "placement_constraints": [],
+    "queues": [
+        ""
+    ],
+    "resource_limits": [
+        {
+            "type": "cpuCount",
+            "value": "2"
+        },
+        {
+            "type": "CPU Request"
+        },
+        {
+            "type": "memory",
+            "value": "8192"
+        },
+        {
+            "type": "Memory Request"
+        },
+        {
+            "type": "AMD GPUs",
+            "value": "0"
+        },
+        {
+            "type": "NVIDIA GPUs",
+            "value": "0"
+        }
+    ],
+    "resource_profile": "01:default"
+}

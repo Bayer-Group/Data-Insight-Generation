@@ -1,117 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Data Insight Generation (D&middot;I&middot;G)</title>
 <style>
-:root{
-  --bayer-blue:#005DAA;
-  --bayer-green:#6CC24A;
-  --bg:#f5f8fb;
-  --card:#ffffff;
-  --text:#1f2937;
-}
-*{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI, Arial, sans-serif;}
-body{background:var(--bg);color:var(--text);}
-header{
-  background:linear-gradient(135deg,var(--bayer-blue),#0078d4);
-  color:white;padding:40px 24px;text-align:center;
-}
-header h1{font-size:2.2rem;margin-bottom:8px;}
-header p{opacity:.95;}
-.container{max-width:1400px;margin:auto;padding:32px 24px;}
-.grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
- gap:24px;
-}
-.card{
- background:var(--card);
- border-radius:20px;
- padding:24px;
- text-align:center;
- box-shadow:0 8px 24px rgba(0,0,0,.08);
- transition:.25s;
- cursor:pointer;
-}
-.card:hover{transform:translateY(-4px);}
-.logo{
- width:90px;height:90px;border-radius:18px;
- background:linear-gradient(135deg,var(--bayer-blue),var(--bayer-green));
- margin:0 auto 16px;
- display:flex;align-items:center;justify-content:center;
- color:white;font-size:24px;font-weight:bold;
-}
-.app-page{display:none;max-width:1000px;margin:auto;padding:32px;}
-.back{background:var(--bayer-blue);color:white;border:none;padding:10px 18px;border-radius:10px;cursor:pointer;margin-bottom:24px;}
-.screenshot{
- width:100%;height:400px;border:3px dashed #b7c6d8;border-radius:18px;
- display:flex;align-items:center;justify-content:center;
- background:white;color:#64748b;
-}
-.text-box{
- background:white;padding:24px;border-radius:18px;
- box-shadow:0 8px 20px rgba(0,0,0,.06);
- margin-bottom:24px;line-height:1.6;
-}
-footer{text-align:center;padding:24px;color:#64748b;}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f5f8fb;margin:0}
+header{background:#005DAA;color:#fff;padding:40px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:30px}
+.card{background:#fff;padding:24px;border-radius:18px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.1);text-decoration:none;color:#222}
+.logo{width:90px;height:90px;margin:auto;background:linear-gradient(135deg,#005DAA,#6CC24A);border-radius:18px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:bold;margin-bottom:15px}
 </style>
 </head>
 <body>
-<header>
-<h1>Application Portfolio</h1>
-<p>Select an application to view its dedicated page.</p>
-</header>
-
-<div id="home" class="container">
+<header><h1>Data Insight Generation (D&middot;I&middot;G)</h1></header>
 <div class="grid">
-<script>
-</script>
-</div>
-</div>
-
-<div id="pages"></div>
-
-<footer>Placeholder application showcase</footer>
-
-<script>
-const apps = Array.from({length:10}, (_,i)=>({id:i+1,name:`App ${i+1}`}));
-
-const grid=document.querySelector('.grid');
-const pages=document.getElementById('pages');
-
-apps.forEach(app=>{
- const card=document.createElement('div');
- card.className='card';
- card.innerHTML=`<div class="logo">${app.id}</div><h3>${app.name}</h3><p>Click to open app page</p>`;
- card.onclick=()=>openPage(app.id);
- grid.appendChild(card);
-
- const page=document.createElement('div');
- page.className='app-page';
- page.id=`app-${app.id}`;
- page.innerHTML=`
- <button class="back" onclick="goHome()">← Back to overview</button>
- <h2 style="margin-bottom:20px;color:var(--bayer-blue)">${app.name}</h2>
- <div class="text-box">
-   <h3>Short Description</h3>
-   <p>[Insert short app description here]</p>
- </div>
- <div class="screenshot">Screenshot Placeholder</div>`;
- pages.appendChild(page);
-});
-
-function openPage(id){
- document.getElementById('home').style.display='none';
- document.querySelectorAll('.app-page').forEach(p=>p.style.display='none');
- document.getElementById(`app-${id}`).style.display='block';
- window.scrollTo(0,0);
-}
-function goHome(){
- document.getElementById('home').style.display='block';
- document.querySelectorAll('.app-page').forEach(p=>p.style.display='none');
-}
-</script>
+<a class="card" href="DoRiS/DoRiS.html"><div class="logo">1</div><h3>DoRiS</h3></a>
+<a class="card" href="SubgroupExplorer/SubgroupExplorer.html"><div class="logo">2</div><h3>Subgroup Explorer</h3></a>
+<a class="card" href="visiTrends/visiTrends.html"><div class="logo">3</div><h3>visiTrends</h3></a>
+<a class="card" href="DetectoR/DetectoR.html"><div class="logo">4</div><h3>DetectoR</h3></a>
+<a class="card" href="eDISHr/eDISHr.html"><div class="logo">5</div><h3>eDISHr</h3></a>
+<a class="card" href="spiderwebs/spiderwebs.html"><div class="logo">6</div><h3>spiderwebs</h3></a>
+<a class="card" href="melon/melon.html"><div class="logo">7</div><h3>melon</h3></a>
+<a class="card" href="Megaplots/Megaplots.html"><div class="logo">8</div><h3>Megaplots</h3></a>
+<a class="card" href="baselineR/baselineR.html"><div class="logo">9</div><h3>baselineR</h3></a>
+<a class="card" href="BReasy/BReasy.html"><div class="logo">10</div><h3>BReasy</h3></a></div>
 </body>
 </html>
