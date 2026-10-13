@@ -7,14 +7,15 @@
 <title>Data Insight Generation (D&middot;I&middot;G)</title>
 <style>
 body{font-family:Segoe UI,Arial,sans-serif;background:#f5f8fb;margin:0}
-header{background:url(dig_background.png);background-repeat: no-repeat;background-attachment: 100%;background-size: cover;color:#fff;padding:40px;text-align:center}
+header {width: 100%;aspect-ratio: 985 / 262;background-image: url(dig_background.png);background-repeat: no-repeat;background-position: center;background-size: 100% 100%;display: flex;align-items: center;justify-content: center;}
+.dig-logo {height: 65%;width: auto;max-width: 90%;object-fit: contain;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:30px}
 .card{background:#fff;padding:24px;border-radius:18px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.1);text-decoration:none;color:#222}
 .logo{width:90px;height:90px;margin:auto;background:white;border-radius:8px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:bold;margin-bottom:15px}
 </style>
 </head>
 <body>
-<header><img src="dig_white_w_text.png" alt="D.I.G Logo" width="75%"></header>
+<header><img src="dig_white_w_text.png" alt="D.I.G Logo" class="dig-logo"></header>
 <div class="grid">
 <a class="card" href="DoRiS/DoRiS.html"><div class="logo"><img src="logos/doris_lightmode_col_001.svg" alt="Doris Logo" class="logo"></div><h3>DoRiS</h3></a>
 <a class="card" href="SubgroupExplorer/SubgroupExplorer.html"><div class="logo"><img src="logos/subgroupexplorer_lightmode_col_001.svg" alt="Subgroup Explorer Logo" class="logo"></div><h3>Subgroup Explorer</h3></a>
