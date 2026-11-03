@@ -2,16 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>DoRiS</title>
   <style>
     body{font-family:Segoe UI,Arial,sans-serif;background:#012E60;margin:0;padding:4px;color:white}
-    a{background:rgba(32, 141, 184, 1);color:white;padding:10px 15px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;}    
+    a{background:rgba(32, 141, 184, 1);color:white;padding:10px 15px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;}  
+    .title-row{display: flex;align-items: center;gap: 12px;}
+    .github-button{display: inline-flex;align-items: center;justify-content: center;width: 40px;height: 40px;padding: 0;margin-top: 0;flex-shrink: 0;font-size: 24px;line-height: 1;}
+    .github-button:hover{background: #176e91;}
+    .github-button:focus-visible{outline: 2px solid white;outline-offset: 3px;}   
     .box{background:#012E60;padding:4px;border-radius:8px;margin-top:20px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
     .screenshot {width: 100%;max-width: 100%;border-radius: 8px;box-shadow: 0 0px 0px rgba(0,0,0,.1);display: block;}
   </style>
 </head>
 <body><a href="../index.html">← Back</a>
-  <h1>DoRiS</h1>
+  <div class="title-row">
+    <h1>DoRiS</h1>
+    <a href="https://github.com/Bayer-Group/DoRiS" class="github-button" target="_blank" rel="noopener noreferrer" aria-label="View visiTrends on GitHub (opens in a new tab)" title="View visiTrends on GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+  </div>
   <div class="box">
     <img src="DoRiS_screenshot1.png" alt="Screenshot of DoRiS App" class="screenshot">
     <p style="padding: 0 24px">DoRiS is a powerful DIG application designed to explore dose–response relationships in clinical study data with a focus on patient heterogeneity. By combining interactive visualizations with subgroup-based analyses, it helps teams understand how treatment effects evolve across different dose levels and patient populations. The app makes it easy to uncover patterns that may be masked in overall study summaries, revealing where treatment responses diverge between groups. Users can investigate whether certain patient characteristics are associated with stronger or weaker responses to increasing doses and assess the consistency of these trends across the study population. Through intuitive exploration of efficacy and safety outcomes, DoRiS supports a deeper understanding of how dosing strategies influence clinical results. The application helps identify opportunities for more tailored treatment approaches by highlighting populations that may respond differently to a given dose regimen. By turning complex dose–response data into clear and actionable insights, DoRiS enables data-driven discussions and more informed decision-making.</p>

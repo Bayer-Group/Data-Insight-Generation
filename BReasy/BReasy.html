@@ -2,16 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>BReasy</title>
   <style>
     body{font-family:Segoe UI,Arial,sans-serif;background:#012E60;margin:0;padding:4px;color:white}
-    a{background:rgba(32, 141, 184, 1);color:white;padding:10px 15px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;}    
+    a{background:rgba(32, 141, 184, 1);color:white;padding:10px 15px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;} 
+    .title-row{display: flex;align-items: center;gap: 12px;}
+    .github-button{display: inline-flex;align-items: center;justify-content: center;width: 40px;height: 40px;padding: 0;margin-top: 0;flex-shrink: 0;font-size: 24px;line-height: 1;}
+    .github-button:hover{background: #176e91;}
+    .github-button:focus-visible{outline: 2px solid white;outline-offset: 3px;}   
     .box{background:#012E60;padding:4px;border-radius:8px;margin-top:20px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
     .screenshot {width: 100%;max-width: 100%;border-radius: 8px;box-shadow: 0 0px 0px rgba(0,0,0,.1);display: block;}
   </style>
 </head>
 <body><a href="../index.html">← Back</a>
-  <h1>BReasy</h1>
+  <div class="title-row">
+    <h1>BReasy</h1>
+    <a href="https://github.com/Bayer-Group/BReasy" class="github-button" target="_blank" rel="noopener noreferrer" aria-label="View visiTrends on GitHub (opens in a new tab)" title="View visiTrends on GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+  </div>
   <div class="box">
     <img src="BReasy_screenshot1.png" alt="Screenshot of BReasy App" class="screenshot">
     <p style="padding: 0 24px">BReasy is a benefit-risk exploration application designed to help study teams evaluate the overall balance between treatment effectiveness and safety in a clear, intuitive way. By combining efficacy and safety outcomes in a unified view, it enables users to quickly understand whether a treatment's clinical value outweighs its associated risks. The app supports detailed assessment of how strongly individual endpoints contribute to the overall benefit-risk picture and highlights the factors that most influence decision-making. Interactive visualizations reveal whether positive treatment effects are observed consistently across multiple measures or driven by only a limited set of outcomes. At the same time, BReasy helps identify safety signals and determine whether risk increases are isolated or part of a broader pattern. Users can explore how the benefit-risk profile evolves across different patient populations, making it easier to uncover subgroup-specific differences and assess robustness of findings. By bringing these insights together in a single environment, BReasy enables faster, more confident interpretation of complex clinical study results and supports evidence-based discussions within the study team.</p>

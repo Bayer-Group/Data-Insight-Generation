@@ -2,16 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>Megaplots</title>
   <style>
     body{font-family:Segoe UI,Arial,sans-serif;background:#012E60;margin:0;padding:4px;color:white}
     a{background:rgba(32, 141, 184, 1);color:white;padding:10px 15px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;}    
+    .title-row{display: flex;align-items: center;gap: 12px;}
+    .github-button{display: inline-flex;align-items: center;justify-content: center;width: 40px;height: 40px;padding: 0;margin-top: 0;flex-shrink: 0;font-size: 24px;line-height: 1;}
+    .github-button:hover{background: #176e91;}
+    .github-button:focus-visible{outline: 2px solid white;outline-offset: 3px;}
     .box{background:#012E60;padding:4px;border-radius:8px;margin-top:20px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
     .screenshot {width: 100%;max-width: 100%;border-radius: 8px;box-shadow: 0 0px 0px rgba(0,0,0,.1);display: block;}
   </style>
 </head>
 <body><a href="../index.html">← Back</a>
-  <h1>Megaplots</h1>
+  <div class="title-row">
+    <h1>Megaplots</h1>
+    <a href="https://github.com/Bayer-Group/megaplots" class="github-button" target="_blank" rel="noopener noreferrer" aria-label="View visiTrends on GitHub (opens in a new tab)" title="View visiTrends on GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+  </div>
   <div class="box">
     <img src="megaplots_screenshot1.png" alt="Screenshot of Megaplots App" class="screenshot">
     <p style="padding: 0 24px">Megaplots provides an interactive visual exploration of event timelines across subjects, enabling users to uncover meaningful patterns that are often difficult to detect in traditional tabular outputs. By aligning events relative to key study milestones, the app shows how different occurrences develop over time and how they relate to one another within individual subjects. Its dynamic visualization makes it easy to identify temporal clusters, recurring sequences, and potential dependencies between multiple event types. Users can seamlessly compare patterns across treatment arms, demographic segments, or other study-defined subgroups to understand how experiences vary between populations. The app also highlights similarities and differences across subjects, helping to uncover groups that share common event trajectories or behavioral profiles. Flexible filtering and subgrouping capabilities support targeted investigations while maintaining a comprehensive study-level perspective. Megaplots transforms complex event data into actionable insights that support deeper understanding and more informed decision-making.</p>

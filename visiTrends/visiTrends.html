@@ -2,16 +2,26 @@
 <html>
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>visiTrends</title>
   <style>
     body{font-family:Segoe UI,Arial,sans-serif;background:#012E60;margin:0;padding:4px;color:white}
-    a{background:rgba(32, 141, 184, 1);color:white;padding:10px 15px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;}    
+    a{background:rgba(32, 141, 184, 1);color:white;padding:10px 15px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px;} 
+    .title-row{display: flex;align-items: center;gap: 12px;}
+    .github-button{display: inline-flex;align-items: center;justify-content: center;width: 40px;height: 40px;padding: 0;margin-top: 0;flex-shrink: 0;font-size: 24px;line-height: 1;}
+    .github-button:hover{background: #176e91;}
+    .github-button:focus-visible{outline: 2px solid white;outline-offset: 3px;}
     .box{background:#012E60;padding:4px;border-radius:8px;margin-top:20px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
     .screenshot {width: 100%;max-width: 100%;border-radius: 8px;box-shadow: 0 0px 0px rgba(0,0,0,.1);display: block;}
   </style>
 </head>
 <body><a href="../index.html">← Back</a>
-  <h1>visiTrends</h1>
+  <div class="title-row">
+    <h1>visiTrends</h1>
+    <!--
+    <a href="" class="github-button" target="_blank" rel="noopener noreferrer" aria-label="View visiTrends on GitHub (opens in a new tab)" title="View visiTrends on GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+    -->
+  </div>
   <div class="box">
     <img src="visiTrends_screenshot1.png" alt="Screenshot of visiTrends App" class="screenshot">
     <p style="padding: 0 24px">visiTrends supports the exploratory review of laboratory and vital-sign signals measured over multiple visits. Designed primarily for these repeated safety measures, it also applies to efficacy endpoints and questionnaire scores collected by subject, visit, and treatment. Four linked displays structure the review. An overview shows visit-wise medians and interquartile ranges for each parameter by treatment arm, grouped by parameter category and displayed against the limits of normal, giving a broad picture of change over time across many parameters. A detailed view focuses on up to three parameters, combining individual trajectories with distributional summaries such as violin plots. A threshold analysis classifies each participant's results as below, within, or above the reference range at successive visits, showing when abnormalities occur, whether they persist, resolve, or recur, and how these patterns differ between treatment arms. Finally, a mixed model for repeated measures estimates change from baseline for a selected parameter, either within or between treatment arms, with 95% confidence intervals. Together, these views complement standard safety displays by supporting a broader review of longitudinal trends and potential signals.</p>
